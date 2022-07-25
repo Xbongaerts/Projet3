@@ -4,8 +4,25 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 body, html{
-    background-color: blue;
+    
     font-family: "roboto-regular", sans-serif;
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    justify-content: center;
+}
+#contenu{
+    width: 600px;
+    background-color: orange;
+}
+header{
+    width: 100%;
+    .__img{
+        text-align: center;
+        width: 150px;
+        background-color: blue;
+    }
+}
+
