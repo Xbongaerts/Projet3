@@ -1,25 +1,89 @@
-/*couleur*/
-body, html {
-  font-family: "roboto-regular", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+@charset "UTF-8";
+/*géneral*/
+.flex-center {
   display: flex;
   justify-content: center;
 }
 
+/*base de la page*/
+body {
+  font-family: "roboto-regular", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+body h1 {
+  font-size: 26px;
+}
+
 #contenu {
   width: 600px;
-  background-color: orange;
 }
 
 header {
   width: 100%;
-}
-header .__img {
+  height: 100px;
   text-align: center;
-  width: 150px;
-  background-color: blue;
+  background-color: white;
+}
+header img {
+  width: 200px;
+  height: 50px;
+  margin: 25px 0 15px 0;
+}
+
+main {
+  width: 100%;
+  background-color: #F1EAE9;
+  height: 330px;
+}
+main #position {
+  background-color: #C9C2C1;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #titre {
+  text-align: center;
+  margin: 5px 15px 5px 15px;
+}
+main .btn {
+  width: 200px;
+  border-radius: 25px 25px 25px 25px;
+  border: 2px solid #FF79DA;
+  background-color: #FF79DA;
+  text-align: center;
+  margin: auto;
+}
+main .btn p {
+  color: white;
+}
+
+#menu {
+  width: 100%;
+  height: 330px;
+}
+#menu #menu-txt {
+  margin-left: 15px;
+}
+#menu .filtre-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #F1EAE9;
+  border-radius: 15px;
+  background-color: #F1EAE9;
+  margin: 15px 15px 15px 15px;
+}
+
+.carte-img {
+  width: 100%;
+}
+.carte-img img {
+  width: 100%;
+  height: 150px;
+  margin-top: 25px;
 }/*# sourceMappingURL=main.css.map */
