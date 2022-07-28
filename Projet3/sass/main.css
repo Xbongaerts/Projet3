@@ -1,4 +1,46 @@
 @charset "UTF-8";
+/*couleur*/
+/*couleur position*/
+/*couleur contenu*/
+/*couleur footer*/
+body {
+  font-family: "roboto-regular", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: white;
+}
+header img {
+  width: 200px;
+  height: 50px;
+  margin: 25px 0 15px 0;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 25px 0 25px 25px;
+}
+footer a {
+  color: white;
+}
+footer .cut {
+  margin-right: 15px;
+}
+footer .hand {
+  margin-right: 10px;
+}
+footer img {
+  filter: invert(100%);
+}
+
 /*géneral*/
 .flex-center {
   display: flex;
@@ -11,8 +53,13 @@
   align-items: center;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .btn-num {
-  border: 1px solid #9356DC;
   background-color: #9356DC;
   color: white;
   border-radius: 25px;
@@ -51,7 +98,7 @@ a {
   top: 15%;
 }
 .txt-card1 p {
-  color: #186955;
+  color: #1b6150;
   font-weight: bold;
   line-height: 5px;
 }
@@ -63,6 +110,7 @@ a {
 
 .logo-card {
   margin: 25px 15px 0 0;
+  color: black;
 }
 
 .txt-card3 {
@@ -71,40 +119,13 @@ a {
 }
 
 /*base de la page*/
-body {
-  font-family: "roboto-regular", sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-body h1 {
-  font-size: 26px;
-}
-
-#contenu {
-  width: 600px;
-}
-
-header {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  background-color: white;
-}
-header img {
-  width: 200px;
-  height: 50px;
-  margin: 25px 0 15px 0;
-}
-
 main {
   width: 100%;
-  background-color: #F1EAE9;
+  background-color: #f6f6f6;
   height: 330px;
 }
 main #position {
-  background-color: #C9C2C1;
+  background-color: #f3f3f3;
   width: 100%;
   height: 80px;
   display: flex;
@@ -113,23 +134,28 @@ main #position {
 }
 main #titre {
   text-align: center;
-  margin: 5px 15px 5px 15px;
+  margin: 15px 15px 5px 15px;
+  padding-top: 15px;
+}
+main i {
+  margin-right: 15px;
 }
 main .btn {
   width: 200px;
-  border-radius: 25px 25px 25px 25px;
-  border: 2px solid #FF79DA;
-  background-color: #FF79DA;
+  border-radius: 25px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
   text-align: center;
   margin: auto;
 }
 main .btn p {
   color: white;
+  line-height: 300%;
 }
 
 #menu {
   width: 100%;
-  height: 330px;
+  height: 300px;
   margin: 25px 0 25px 0;
 }
 #menu #menu-txt {
@@ -140,14 +166,13 @@ main .btn p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid #F1EAE9;
   border-radius: 15px;
-  background-color: #F1EAE9;
-  margin: 15px 15px 15px 15px;
+  background-color: #f6f6f6;
+  margin: 15px;
 }
 
 section {
-  background-color: #F1EAE9;
+  background-color: #f6f6f6;
   padding: 25px 0 25px 0;
 }
 section h2 {
@@ -156,7 +181,7 @@ section h2 {
 
 #carte {
   width: 100%;
-  background-color: #F1EAE9;
+  background-color: #f6f6f6;
 }
 #carte .carte-img {
   margin: 15px 15px 15px 15px;
@@ -170,11 +195,53 @@ section h2 {
   border-radius: 15px 15px 0 0;
 }
 
-footer {
-  background-color: rgb(44, 42, 42);
-  color: white;
-  padding: 25px 0 25px 25px;
+/*page menu*/
+main img {
+  width: 100%;
+  height: 300px;
 }
-footer a {
+
+.margin-fleche {
+  margin: 40px 0 0 15px;
+}
+
+.logo-center {
+  width: 200px;
+  height: 50px;
+  margin: auto;
+}
+
+.titre-menu {
+  width: 100%;
+  height: 60px;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+section .btn {
+  width: 200px;
+  border-radius: 25px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  text-align: center;
+  margin: auto;
+}
+section .btn p {
   color: white;
+  line-height: 300%;
+}
+
+.txt-menu {
+  height: 80px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 15px;
+}
+.txt-menu .txt-1 {
+  margin: 15px;
+}
+.txt-menu .txt-2 {
+  margin: 40px 15px 0 0;
 }/*# sourceMappingURL=main.css.map */

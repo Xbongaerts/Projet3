@@ -1,0 +1,17 @@
+footer{
+    background-color:$color-grey3;
+    color: white;
+    padding: 25px 0 25px 25px;
+    a{
+        color: white;
+    }
+    .cut{
+        margin-right: 15px;
+    }
+    .hand{
+        margin-right: 10px;
+    }
+    img{
+        filter: invert(100%);
+    }
+}

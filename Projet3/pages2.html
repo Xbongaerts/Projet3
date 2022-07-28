@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="assets/css/normalize.css" />
-		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="sass/main.css" />
 		<script src="https://kit.fontawesome.com/c6400b8c4b.js" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,69 +14,107 @@
 	<body>
         <div id="contenu">
             <header>
-                <i class="fa-solid fa-arrow-left"></i>
-                <img src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
+                <div class="flex-start">
+                    <div class="margin-fleche"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
+                    <div class="logo-center"><img src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood" /></div>
+                </div>    
             </header>
             <main>
                 <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du gout" />
             </main>
             <section>
-                <div class="titre-menu">
+                <div class="titre-menu flex-center">
                     <h1>La palette du goût</h1>
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart fa-2x"></i>
                 </div>
                 <div class="entree">   
                     <h2>ENTRÉES</h2>
-                    <div class="txt-menu">
-                        <h3>Fricassée d'escargot<h3>
-                        <p>Au piment d'espelette</p>
-                        <p>25€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Fricassée d'escargot<h3>
+                            <p>Au piment d'espelette</p>
+                        </div>
+                        <div class="txt-2">   
+                            <p>25€</p>
+                        </div>    
                     </div>
-                    <div class="txt-menu">
-                        <h3>Foie gras de canard mi-cuit<h3>
-                        <p>Et ses copeaux de truffe noir</p>
-                        <p>35€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Foie gras de canard mi-cuit<h3>
+                            <p>Et ses copeaux de truffe noir</p>
+                        </div>
+                        <div class="txt-2">   
+                            <p>35€</p>
+                        </div>    
                     </div>
-                    <div class="txt-menu">
-                        <h3>Oeuf au plat</h3>
-                        <p>Assaisonné à la truffe sur lit de caviar</p>
-                        <p>20€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Oeuf au plat</h3>
+                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <div class="txt-2">   
+                            <p>20€</p>
+                        </div>    
                     </div>  
                 </div>
                 <div class="plats">
                     <h2>Plats</h2>
-                    <div class="txt-menu">
-                        <h3>Filet de boeuf aux herbes</h3>
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                        <p>40€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Filet de boeuf aux herbes</h3>
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <div class="txt-2">   
+                            <p>40€</p>
+                        </div>    
                     </div>
-                    <div class="txt-menu">
-                        <h3>Parmentier de queue de boeuf</h3>
-                        <p>À la truffe noir sur sa purée de panais</p>
-                        <p>35€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Parmentier de queue de boeuf</h3>
+                            <p>À la truffe noir sur sa purée de panais</p>
+                        </div>
+                        <div class="txt-2">    
+                            <p>35€</p>
+                        </div>    
                     </div>
-                    <div class="txt-menu">
-                        <h3>Filet de turbot</h3>
-                        <p>Aux agrumes</p>
-                        <p>44€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Filet de turbot</h3>
+                            <p>Aux agrumes</p>
+                        </div>
+                        <div class="txt-2">    
+                            <p>44€</p>
+                        </div>    
                     </div>
                 </div>
                 <div class="Desserts">
                     <h2>Desserts</h2>
-                    <div class="txt-menu">
-                        <h3>Paris-Brest</h3>
-                        <p>Revisité</p>
-                        <p>18€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Paris-Brest</h3>
+                            <p>Revisité</p>
+                        </div>
+                        <div class="txt-2">    
+                            <p>18€</p>
+                        </div>    
                     </div>
-                    <div class="txt-menu">
-                        <h3>Macaron au chocolat d'exception</h3>
-                        <p>Et glace à la vanille de Madagascar</p>
-                        <p>22€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Macaron au chocolat d'exception</h3>
+                            <p>Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <div class="txt-2">    
+                            <p>22€</p>
+                        </div>    
                     </div>
-                    <div class="txt-menu">
-                        <h3>Mousse au chocolat</h3>
-                        <p>Au piment d'espelette et sa truffe noire</p>
-                        <p>23€</p>
+                    <div class="txt-menu flex-between">
+                        <div class="txt-1">
+                            <h3>Mousse au chocolat</h3>
+                            <p>Au piment d'espelette et sa truffe noire</p>
+                        </div>
+                        <div class="txt-2">    
+                            <p>23€</p>
+                        </div>    
                     </div>
                 </div>
                 <div class="btn">
@@ -84,13 +122,17 @@
                 </div>       
             </section>
             <footer>
-                <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood mini" />
-                <i class="fa-solid fa-utensils"></i>	
-			    <p>Proposer un restaurant</p>
-                <i class="fa-solid fa-handshake-angle"></i>
-			    <p>Devenir partenaire</p>
-			    <p>Mentions légales</p>
-			    <a href="mailto:gmail.com">contact</a>
+                <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood mini" />	
+				<div class="foot flex-start">
+					<div class="cut"><i class="fa-solid fa-utensils"></i></div>
+					<p>Proposer un restaurant</p>
+				</div>
+				<div class="foot flex-start">	
+					<div class="hand"><i class="fa-solid fa-handshake-angle"></i></div>
+					<p>Devenir partenaire</p>
+				</div>	
+				<p>Mentions légales</p>
+				<a href="mailto:gmail.com">contact</a>
             </footer>
         </div>    
     </body>
