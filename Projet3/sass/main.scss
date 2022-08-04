@@ -1,9 +1,11 @@
 @import "./utils/_variable";
-@import "./layouts/_body";
+@import "./base/homepage";
+@import "./base/restaurants";
+@import "./layouts/_bodycontenu";
 @import "./layouts/_header";
 @import "./layouts/_footer";
 
-/*géneral*/
+/*classe spécial*/
 .flex-center{
     display: flex;
     justify-content: center;
@@ -18,19 +20,6 @@
     justify-content: space-between;
     align-items: center;
 }
-.btn-num{
-    background-color: $color-primary;
-    color: white;
-    border-radius: 25px;
-    margin: 0 10px 0 10px;
-    width: 25px;
-    height: 25px;
-    p{
-        text-align: center;
-        margin: auto;
-        margin-top: 5px;
-    }
-}
 .logo-filtre{
     color:grey;
     margin: 0 10px 0 10px;
@@ -39,161 +28,20 @@
     color: $color-primary;
     margin: 0 10px 0 10px;
 }
-a{
-    text-decoration: none;
-}
-.txt-card1{
-    position: absolute;
-    text-align: center;
-    margin-bottom: 5px;
-    width: 100px;
-    height: 40px;
-    background-color: $color-tertiary;  
-    left: 80%;
-    top: 15%;
-    p{
-        color: #1b6150;
-        font-weight: bold;
-        line-height: 5px;
-    } 
-}
-.txt-card2{
-    display: flex;
-    justify-content: space-between;
-}
-.logo-card{
-    margin: 25px 15px 0 0;
-    color: black;
-}
-.txt-card3{
-    margin-left: 15px;
-    color: black;
-}
 
 
 
 
-/*base de la page*/
 
-main{
-    width: 100%;
-    background-color: $color-grey2;
-    height: 330px;
-    #position{
-        background-color: $color-grey1;
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #titre{
-        text-align: center;
-        margin: 15px 15px 5px 15px;
-        padding-top: 15px;
-    }
-    i{
-        margin-right: 15px;
-    }
-    .btn{
-        width: 200px;
-        border-radius: 25px;
-        height: 50px;
-        background: linear-gradient($color-secondary, $color-primary);
-        text-align: center;
-        margin: auto;
-        p{
-            color: white;
-            line-height: 300%;
-        }
-    }
-}
-#menu{
-    width: 100%;
-    height: 300px;
-    margin: 25px 0 25px 0;
-    #menu-txt{
-        margin-left: 15px;
-    }
-    .filtre-btn{
-        height: 75px;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        border-radius: 15px;
-        background-color: $color-grey2;
-        margin: 15px;
-    }
-}
-section{
-    background-color: $color-grey2;
-    padding: 25px 0 25px 0;
-    h2{
-        margin: 25px 0 0 15px;
-    }   
-}
-#carte{
-    width: 100%;
-    background-color: $color-grey2;
 
-    .carte-img{
-        margin: 15px 15px 15px 15px;
-        position: relative;
-        background-color: white;
-        border-radius: 15px;
-        img{
-            width: 100%;
-            height: 150px;
-            border-radius: 15px 15px 0 0;
-        }
-    }
-}
 
-/*page menu*/
-main img{
-    width: 100%;
-    height: 300px;
-}
-.margin-fleche{
-    margin: 40px 0 0 15px;
-}
-.logo-center{
-    width: 200px;
-    height: 50px;
-    margin: auto;
-}
-.titre-menu{
-    width: 100%;
-    height: 60px;
-    align-items: center;
-}
-section{
-    width: 100%;
-    .btn{
-        width: 200px;
-        border-radius: 25px;
-        height: 50px;
-        background: linear-gradient($color-secondary, $color-primary);
-        text-align: center;
-        margin: auto;
-        p{
-            color: white;
-            line-height: 300%;
-        }
-    }
-}
-.txt-menu{
-    height: 80px;
-    background-color: white;
-    border-radius: 15px;
-    margin: 15px;
-    .txt-1{
-        margin: 15px;   
-    }
-    .txt-2{
-        margin: 40px 15px 0 0;
-    }
-}
+
+
+
+
+
+
+
 
 
 

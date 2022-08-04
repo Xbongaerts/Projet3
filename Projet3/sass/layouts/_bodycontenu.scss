@@ -1,0 +1,46 @@
+::before
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "roboto-regular", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#contenu{
+    width: 600px;   
+}
+a{
+    text-decoration: none;
+}
+/*effet load*/
+.loader-contenu {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 250px;
+    border: 15px solid $color-tertiary;
+    border-top-color: $color-primary;
+    border-bottom-color: $color-secondary;
+    border-radius: 50%;
+    animation: loader 2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loader{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+
+    99%{ 
+        transform: rotate(360deg) scale(1.15);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
