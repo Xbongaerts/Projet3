@@ -140,9 +140,26 @@ section span h2 {
   justify-content: space-between;
 }
 
+/*coeur*/
 .logo-card {
-  margin: 25px 15px 0 0;
+  margin: 10px 15px 0 0;
   color: black;
+}
+.logo-card .fa-solid {
+  position: relative;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+.logo-card .fa-regular {
+  position: absolute;
+}
+.logo-card:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .txt-card3 {
@@ -151,12 +168,16 @@ section span h2 {
 }
 
 /*page menu*/
-main img {
+.main2 {
+  height: 300px;
+}
+
+.main2 img {
   width: 100%;
   height: 300px;
 }
 
-.margin-fleche {
+.fa-arrow-left {
   margin: 40px 0 0 15px;
   color: black;
 }
@@ -168,22 +189,26 @@ main img {
 }
 
 .titre-menu {
-  width: 600px;
-  border-radius: 25px 25px 0 0;
-  height: 80px;
-  position: absolute;
-  top: 40%;
   background-color: #f3f3f3;
   align-items: center;
+  padding: 0 15px 0 30px;
+  border-radius: 40px 40px 0 0;
 }
-.titre-menu h2 {
-  font-family: "Shrikhand-Regular";
+.titre-menu h1 {
+  font-family: "Shrikhand";
+  font-weight: bold;
+  font-size: 35px;
 }
 
-section {
+.section2 {
   width: 100%;
+  background-color: #f3f3f3;
+  padding-bottom: 65px;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -45px;
 }
-section .btn {
+.section2 .btn {
   width: 200px;
   border-radius: 25px;
   height: 50px;
@@ -191,16 +216,29 @@ section .btn {
   text-align: center;
   margin: auto;
 }
-section .btn p {
+.section2 .btn p {
   color: white;
   line-height: 300%;
+}
+
+.section-title {
+  padding-bottom: 20px;
+}
+.section-title h2 {
+  margin-left: 25px;
 }
 
 .txt-menu {
   height: 80px;
   background-color: white;
   border-radius: 15px;
-  margin: 15px;
+  margin: 20px;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  -webkit-animation: menu 1s;
+          animation: menu 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  overflow: hidden;
 }
 .txt-menu .txt-1 {
   margin: 15px;
@@ -209,14 +247,53 @@ section .btn p {
   margin: 40px 15px 0 0;
 }
 
-section h2 {
+.delay1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.delay2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.delay3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.section2 h2 {
   width: 60px;
   border-bottom: 5px solid #99E2D0;
 }
-section h2 h2::after {
+.section2 h2 h2::after {
   width: 50%;
 }
+.section2 h2 p {
+  font-size: 16px;
+  font-weight: bolder;
+}
+.section2 h2 h3 {
+  font-size: 16px;
+}
 
+/*animation*/
+@-webkit-keyframes menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 ::before ::after {
   box-sizing: border-box;
   padding: 0;
@@ -242,15 +319,28 @@ a {
 /*effet load*/
 .loader-contenu {
   position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0deg, 0%, 100%, 0.9);
+  z-index: 999;
+  -webkit-animation: loader-contenu 3s linear;
+          animation: loader-contenu 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.loader-contenu .loader {
+  position: fixed;
   width: 80px;
   height: 80px;
-  margin-top: 250px;
+  margin-top: 300px;
   border: 15px solid #99E2D0;
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: loader 2s linear;
-          animation: loader 2s linear;
+  -webkit-animation: loader 3s linear;
+          animation: loader 3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -276,6 +366,18 @@ a {
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes loader-contenu {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes loader-contenu {
+  100% {
+    opacity: 0;
+    z-index: -10;
   }
 }
 header {

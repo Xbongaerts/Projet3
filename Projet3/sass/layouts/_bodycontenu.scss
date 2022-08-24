@@ -18,29 +18,47 @@ a{
     text-decoration: none;
 }
 /*effet load*/
-.loader-contenu {
+.loader-contenu{
     position: absolute;
-    width: 80px;
-    height: 80px;
-    margin-top: 250px;
-    border: 15px solid $color-tertiary;
-    border-top-color: $color-primary;
-    border-bottom-color: $color-secondary;
-    border-radius: 50%;
-    animation: loader 2s linear;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0,0%,100%,.9);
+    z-index: 999;
+    animation: loader-contenu 3s linear;
     animation-fill-mode: forwards;
-}
 
+
+    .loader{
+        position:fixed;
+        width: 80px;
+        height: 80px;
+        margin-top: 300px;
+        border: 15px solid $color-tertiary;
+        border-top-color: $color-primary;
+        border-bottom-color: $color-secondary;
+        border-radius: 50%;
+        animation: loader 3s linear;
+        animation-fill-mode: forwards;
+    }
+}    
 @keyframes loader{
     0%{
         transform: rotate(0deg) scale(1);
     }
-
     99%{ 
         transform: rotate(360deg) scale(1.15);
     }
     100%{
         opacity: 0;
     }
+}
+@keyframes loader-contenu {
+    100%{
+        opacity: 0;
+        z-index: -10;
+    }
+    
 }
 

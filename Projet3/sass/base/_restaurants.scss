@@ -1,9 +1,12 @@
 /*page menu*/
-main img{
+.main2{
+    height: 300px;
+}
+.main2 img{
     width: 100%;
     height: 300px;
 }
-.margin-fleche{
+.fa-arrow-left{
     margin: 40px 0 0 15px;
     color: black;
 }
@@ -13,21 +16,23 @@ main img{
     margin: auto;
 }
 .titre-menu{
-    width: 600px;
-    border-radius: 25px 25px 0 0;
-    height: 80px;
-    position: absolute;
-    top: 40%;
     background-color: $color-grey2;
     align-items: center;
-    
-    h2{
-        font-family:"Shrikhand-Regular";
-        
-    }
+    padding: 0 15px 0 30px;
+    border-radius: 40px 40px 0 0;
+    h1{
+        font-family:"Shrikhand";
+        font-weight: bold;
+        font-size: 35px;  
+    }      
 }
-section{
+.section2{
     width: 100%;
+    background-color: $color-grey2;
+    padding-bottom: 65px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -45px;
     .btn{
         width: 200px;
         border-radius: 25px;
@@ -41,11 +46,21 @@ section{
         }
     }
 }
+.section-title{
+    padding-bottom: 20px;
+    h2{
+    margin-left: 25px;
+    }
+}    
 .txt-menu{
     height: 80px;
     background-color: white;
     border-radius: 15px;
-    margin: 15px;
+    margin: 20px;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    animation: menu 1s;
+    animation-fill-mode: both;
+    overflow: hidden;
     .txt-1{
         margin: 15px;   
     }
@@ -53,11 +68,36 @@ section{
         margin: 40px 15px 0 0;
     }
 }
-section h2{
+.delay1{
+    animation-delay: 100ms;
+}
+.delay2{
+    animation-delay: 200ms;
+}
+.delay3{
+    animation-delay: 300ms;
+}
+.section2 h2{
     width: 60px;
     border-bottom: 5px solid $color-tertiary;
     h2::after{
         width: 50%;
     }
-
+    p{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    h3{
+        font-size: 16px;
+    }
+}
+/*animation*/
+@keyframes menu {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }
