@@ -142,7 +142,7 @@ section span h2 {
 
 /*coeur*/
 .logo-card {
-  margin: 10px 15px 0 0;
+  margin: 25px 25px 0 0;
   color: black;
 }
 .logo-card .fa-solid {
@@ -160,6 +160,11 @@ section span h2 {
 .logo-card:hover .fa-solid {
   opacity: 1;
   transform: scale(1.1);
+}
+
+.logo-card2 {
+  margin: 0;
+  margin-right: 15px;
 }
 
 .txt-card3 {
@@ -188,6 +193,10 @@ section span h2 {
   margin: auto;
 }
 
+.margin-fleche {
+  cursor: pointer;
+}
+
 .titre-menu {
   background-color: #f3f3f3;
   align-items: center;
@@ -197,13 +206,13 @@ section span h2 {
 .titre-menu h1 {
   font-family: "Shrikhand";
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .section2 {
   width: 100%;
   background-color: #f3f3f3;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
   border-radius: 40px 40px 0 0;
   position: relative;
   top: -45px;
@@ -215,6 +224,7 @@ section span h2 {
   background: linear-gradient(#FF79DA, #9356DC);
   text-align: center;
   margin: auto;
+  cursor: pointer;
 }
 .section2 .btn p {
   color: white;
@@ -238,28 +248,75 @@ section span h2 {
           animation: menu 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
+  cursor: pointer;
 }
 .txt-menu .txt-1 {
   margin: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.txt-menu .txt-1 h3, .txt-menu .txt-1 p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .txt-menu .txt-2 {
-  margin: 40px 15px 0 0;
+  margin-top: 40px;
+  margin-left: auto;
+  font-weight: bold;
+}
+.txt-menu:hover .check {
+  margin-right: 0;
+  transition-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.txt-menu:hover .item {
+  -webkit-animation: check 0.6s;
+          animation: check 0.6s;
+}
+
+.check {
+  overflow: hidden;
+  width: 65px;
+  height: 80px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  margin-right: -65px;
+  margin-left: 15px;
+}
+.check .item {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+.check i {
+  color: #99E2D0;
+  margin-top: 5px;
 }
 
 .delay1 {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
 
 .delay2 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 .delay3 {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+
+.delay4 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .section2 h2 {
@@ -280,18 +337,38 @@ section span h2 {
 /*animation*/
 @-webkit-keyframes menu {
   0% {
-    transform: scale(0);
+    transform: translateY(-50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes menu {
   0% {
-    transform: scale(0);
+    transform: translateY(-50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes check {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 ::before ::after {
@@ -312,21 +389,26 @@ body {
   width: 600px;
 }
 
+#contenu2 {
+  max-width: 600px;
+  background-color: #f3f3f3;
+}
+
 a {
   text-decoration: none;
 }
 
 /*effet load*/
 .loader-contenu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   background-color: hsla(0deg, 0%, 100%, 0.9);
   z-index: 999;
-  -webkit-animation: loader-contenu 3s linear;
-          animation: loader-contenu 3s linear;
+  -webkit-animation: loader-contenu 4s linear;
+          animation: loader-contenu 4s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -339,8 +421,8 @@ a {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: loader 3s linear;
-          animation: loader 3s linear;
+  -webkit-animation: loader 4s linear;
+          animation: loader 4s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -378,6 +460,20 @@ a {
   100% {
     opacity: 0;
     z-index: -10;
+  }
+}
+/*reponsive*/
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  #contenu2 {
+    width: auto;
+  }
+  .txt-menu {
+    width: auto;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1440px) {
+  #contenu2 {
+    max-width: 1440px;
   }
 }
 header {

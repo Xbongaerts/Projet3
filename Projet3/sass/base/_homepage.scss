@@ -135,7 +135,7 @@ section{
 }
 /*coeur*/
 .logo-card{
-    margin: 10px 15px 0 0;
+    margin: 25px 25px 0 0;
     color: black;
     .fa-solid{
         position: relative;
@@ -152,7 +152,11 @@ section{
         opacity: 1;
         transform: scale(1.1);
     }
-}   
+} 
+.logo-card2{
+    margin: 0;
+    margin-right: 15px;
+}  
 .txt-card3{
     margin-left: 15px;
     color: black;

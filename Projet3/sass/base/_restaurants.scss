@@ -15,6 +15,9 @@
     height: 50px;
     margin: auto;
 }
+.margin-fleche{
+    cursor: pointer;
+}
 .titre-menu{
     background-color: $color-grey2;
     align-items: center;
@@ -23,13 +26,13 @@
     h1{
         font-family:"Shrikhand";
         font-weight: bold;
-        font-size: 35px;  
+        font-size: 30px;  
     }      
 }
 .section2{
     width: 100%;
     background-color: $color-grey2;
-    padding-bottom: 65px;
+    padding-bottom: 60px;
     border-radius: 40px 40px 0 0;
     position: relative;
     top: -45px;
@@ -40,6 +43,7 @@
         background: linear-gradient($color-secondary, $color-primary);
         text-align: center;
         margin: auto;
+        cursor: pointer;
         p{
             color: white;
             line-height: 300%;
@@ -60,22 +64,67 @@
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
     animation: menu 1s;
     animation-fill-mode: both;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
+    cursor: pointer;
     .txt-1{
-        margin: 15px;   
+        margin: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        h3, p{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        } 
     }
     .txt-2{
-        margin: 40px 15px 0 0;
+        margin-top: 40px;
+        margin-left: auto;
+        font-weight: bold;
     }
-}
+    &:hover .check{
+        margin-right: 0;
+        transition-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    }    
+    &:hover .item{
+        animation: check .6s;
+    }
+    
+}     
+    .check{   
+        overflow: hidden;
+        width: 65px;
+        height: 80px;
+        border-radius: 0 15px 15px 0;
+        background-color: $color-tertiary;
+        margin-right: -65px;
+        margin-left: 15px;
+        
+        .item{
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 100px;
+            margin-top: 20px;
+        }   
+        i{
+            color: $color-tertiary;
+            margin-top: 5px;
+        }
+    }
 .delay1{
-    animation-delay: 100ms;
+    animation-delay: 150ms;
 }
 .delay2{
-    animation-delay: 200ms;
+    animation-delay: 300ms;
 }
 .delay3{
-    animation-delay: 300ms;
+    animation-delay: 450ms;
+}
+.delay4{
+    animation-delay: 600ms;
 }
 .section2 h2{
     width: 60px;
@@ -94,10 +143,20 @@
 /*animation*/
 @keyframes menu {
     0%{
-        transform: scale(0);
+        transform: translateY(-50%);
+        opacity: 0;
     }
     100%{
-        transform: scale(1);
+        transform: translateY(0);
+        opacity: 1;
     }
     
+}
+@keyframes check{
+    0%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
