@@ -6,12 +6,17 @@ footer{
         color: white;
     }
     .cut{
-        margin-right: 15px;
+        margin-right: 15px;  
     }
     .hand{
         margin-right: 10px;
     }
     img{
         filter: invert(100%);
+        font-size: 12px;
+    }
+    .foot{
+        padding: 8px 0 10px 0;
+        margin: 0;
     }
 }

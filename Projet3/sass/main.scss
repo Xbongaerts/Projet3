@@ -1,33 +1,13 @@
 @import "./utils/_variable";
+@import "./utils/animation";
 @import "./base/homepage";
+@import "./base/responsive";
 @import "./base/restaurants";
 @import "./layouts/_bodycontenu";
 @import "./layouts/_header";
 @import "./layouts/_footer";
 
-/*classe spécial*/
-.flex-center{
-    display: flex;
-    justify-content: center;
-}
-.flex-start{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.flex-between{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo-filtre{
-    color:grey;
-    margin: 0 10px 0 10px;
-}
-.logo-filtre2{
-    color: $color-primary;
-    margin: 0 10px 0 10px;
-}
+
 
 
 

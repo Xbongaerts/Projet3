@@ -1,0 +1,39 @@
+/*animation loader spinning*/
+@keyframes loader{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    99%{ 
+        transform: rotate(360deg) scale(1.15);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes loader-contenu {
+    100%{
+        opacity: 0;
+        z-index: -10;
+    }   
+}
+/*animation navbar chargement*/
+@keyframes menu {
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+/*animation navbar check*/
+@keyframes check{
+    0%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
