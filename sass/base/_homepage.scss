@@ -120,7 +120,7 @@ section{
         border-radius: 15px;
         position: relative;
         &:hover{
-            scale: 1.02;
+            transform: scale(1.02);
         }
         img{
             width: 100%;

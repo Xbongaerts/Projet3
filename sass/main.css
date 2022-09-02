@@ -201,7 +201,7 @@ section span h2 {
   position: relative;
 }
 #carte .carte-img:hover {
-  scale: 1.02;
+  transform: scale(1.02);
 }
 #carte .carte-img img {
   width: 100%;
@@ -300,7 +300,6 @@ section span h2 {
   }
   #filtre .filtre-btn {
     padding-right: 25px;
-    padding: auto;
   }
 }
 @media screen and (min-width: 1000px) {
