@@ -318,8 +318,7 @@ section span h2 {
     margin: 15px;
   }
   section #carte .txt-card1 {
-    left: 70%;
-    margin-right: auto;
+    left: 55%;
   }
 }
 /*Page restaurant*/
@@ -335,6 +334,11 @@ section span h2 {
   .section-title {
     max-width: 70%;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .txt-card1 {
+    left: 65%;
   }
 }
 /*page menu*/
@@ -367,7 +371,7 @@ section span h2 {
 .titre-menu {
   background-color: #f3f3f3;
   align-items: center;
-  padding: 0 15px 0 30px;
+  padding: 0 15px 0 15px;
   border-radius: 40px 40px 0 0;
 }
 .titre-menu h1 {
@@ -376,6 +380,7 @@ section span h2 {
   font-size: 30px;
 }
 
+/*section carte restaurant*/
 .section2 {
   width: 100%;
   background-color: #f3f3f3;
@@ -405,6 +410,7 @@ section span h2 {
   margin-left: 25px;
 }
 
+/*carte menu + animation*/
 .txt-menu {
   height: 80px;
   background-color: white;

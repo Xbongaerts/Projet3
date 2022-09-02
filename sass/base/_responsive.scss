@@ -52,9 +52,8 @@
                 margin: 15px;
             }
             .txt-card1{
-                left: 70%;
-                margin-right: auto;
-            }  
+                left: 55%;
+            } 
         }   
     }
 }
@@ -72,6 +71,11 @@
     .section-title{
         max-width: 70%;
         margin: auto;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+    .txt-card1{
+        left: 65%;
     }
 }
 
